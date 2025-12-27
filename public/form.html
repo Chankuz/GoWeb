@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <style>
+    label {
+      color: green;
+    }
+  </style>
+
+  <body>
+    <div>
+      <form method="POST" action="/form">
+        <h3>Ticket Checkout Summary</h3>
+        <label>user</label><br /><input
+          name="user"
+          value=""
+          type="text"
+        /><br /><br />
+        <label>Weight</label><br /><input
+          name="weight"
+          value=""
+          type="text"
+        /><br /><br />
+
+        <label>Height</label><br /><input
+          name="height"
+          value=""
+          type="text"
+          required
+        /><br /><br />
+
+        <input type="submit" value="submit" />
+      </form>
+    </div>
+  </body>
+</html>
