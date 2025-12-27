@@ -19,6 +19,7 @@ func FormHanlder(w http.ResponseWriter, r *http.Request) {
 
 	weight := r.FormValue("weight")
 	height := r.FormValue("height")
+	ticket := r.FormValue("ticket")
 
 	// price, err := strconv.Atoi(ticketquantity)
 	// if err != nil {
@@ -27,6 +28,7 @@ func FormHanlder(w http.ResponseWriter, r *http.Request) {
 	// fmt.Println(price)
 	fmt.Fprintf(w, "weight: %s\n", weight)
 	fmt.Fprintf(w, "height: %s\n", height)
+	fmt.Fprintf(w, "ticket: %s\n", ticket)
 
 	weightFloat, err := strconv.ParseFloat(weight, 64)
 	if err != nil {
